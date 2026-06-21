@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas 2 - Tipe Data dan Operator Java</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f8ff;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0066ff,#00bfff);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0066cc;
+    margin-bottom:15px;
+    border-left:5px solid #0066cc;
+    padding-left:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#0077ff;
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7fbff;
+}
+
+.code{
+    background:#272822;
+    color:#ffffff;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:10px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.box{
+    background:#eef5ff;
+    padding:15px;
+    border-left:5px solid #0077ff;
+    border-radius:10px;
+}
+
+footer{
+    background:#0066cc;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>TUGAS POST TEST 2</h1>
+    <p>Tipe Data dan Operator Java</p>
+</header>
+
+<div class="container">
+
+    <!-- DATA MAHASISWA -->
+    <div class="card">
+        <h2>Data Mahasiswa</h2>
+
+        <div class="info">
+            <div class="box">
+                <strong>Nama</strong><br>
+                Apolonia Alexandria Ongge
+            </div>
+
+            <div class="box">
+                <strong>NIM</strong><br>
+                250403010051
+            </div>
+
+            <div class="box">
+                <strong>Kelas</strong><br>
+                A
+            </div>
+
+            <div class="box">
+                <strong>Mata Kuliah</strong><br>
+                Algoritma Pemrograman
+        </div>
+    </div>
+
+    <!-- SOAL 1 -->
+    <div class="card">
+        <h2>1. Perbedaan Tipe Data Primitif dan Non-Primitif</h2>
+
+        <table>
+            <tr>
+                <th>Tipe Data Primitif</th>
+                <th>Tipe Data Non-Primitif</th>
+            </tr>
+
+            <tr>
+                <td>
+                    Menyimpan satu nilai dalam satu variabel.
+                    <br><br>
+                    Contoh:
+                    <ul>
+                        <li>int</li>
+                        <li>float</li>
+                        <li>boolean</li>
+                        <li>char</li>
+                    </ul>
+                </td>
+
+                <td>
+                    Tipe data yang didefinisikan oleh programmer dan dapat
+                    menyimpan lebih dari satu nilai.
+                    <br><br>
+                    Contoh:
+                    <ul>
+                        <li>String</li>
+                        <li>Array</li>
+                        <li>Interface</li>
+                        <li>Enum</li>
+                        <li>Class</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- SOAL 2 -->
+    <div class="card">
+        <h2>2. Analisis Kesalahan Penulisan Variabel</h2>
+
+        <table>
+            <tr>
+                <th>Penulisan Salah</th>
+                <th>Kesalahan</th>
+                <th>Penulisan Benar</th>
+            </tr>
+
+            <tr>
+                <td>Int 5angka;</td>
+                <td>
+                    • Kata kunci int harus huruf kecil.<br>
+                    • Nama variabel tidak boleh diawali angka.
+                </td>
+                <td>
+                    int angka5;<br>
+                    atau<br>
+                    int limaAngka;
+                </td>
+            </tr>
+
+            <tr>
+                <td>String nama siswa;</td>
+                <td>
+                    Nama variabel tidak boleh mengandung spasi.
+                </td>
+                <td>
+                    String namaSiswa;<br>
+                    atau<br>
+                    String nama_siswa;
+                </td>
+            </tr>
+
+            <tr>
+                <td>Int static;</td>
+                <td>
+                    • int harus huruf kecil.<br>
+                    • static merupakan Reserved Keyword Java.
+                </td>
+                <td>
+                    int status;<br>
+                    atau<br>
+                    int nilaiStatik;
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- SOAL 3 -->
+    <div class="card">
+        <h2>3. Contoh Deklarasi Array</h2>
+
+        <h3>Deklarasi dan Inisialisasi Sekaligus</h3>
+
+        <div class="code">
+int[] nilaiMahasiswa = {80, 90, 75, 100};
+        </div>
+
+        <br>
+
+        <h3>Deklarasi dengan Ukuran Tertentu</h3>
+
+        <div class="code">
+String[] daftarNama = new String[5];
+        </div>
+
+    </div>
+
+    <!-- SOAL 4 -->
+    <div class="card">
+        <h2>4. Operator Aritmatika dalam Java</h2>
+
+        <h3>Operator Aritmatika Binary</h3>
+
+        <table>
+            <tr>
+                <th>Simbol</th>
+                <th>Nama</th>
+                <th>Deskripsi</th>
+            </tr>
+
+            <tr>
+                <td>*</td>
+                <td>Perkalian</td>
+                <td>Melakukan perkalian dua operand.</td>
+            </tr>
+
+            <tr>
+                <td>+</td>
+                <td>Penjumlahan</td>
+                <td>Menjumlahkan dua operand.</td>
+            </tr>
+
+            <tr>
+                <td>-</td>
+                <td>Pengurangan</td>
+                <td>Mengurangi suatu operand.</td>
+            </tr>
+
+            <tr>
+                <td>/</td>
+                <td>Pembagian</td>
+                <td>Membagi suatu operand.</td>
+            </tr>
+
+            <tr>
+                <td>%</td>
+                <td>Modulus</td>
+                <td>Menghasilkan sisa hasil pembagian.</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h3>Operator Aritmatika Unary</h3>
+
+        <table>
+            <tr>
+                <th>Simbol</th>
+                <th>Nama</th>
+                <th>Deskripsi</th>
+            </tr>
+
+            <tr>
+                <td>+</td>
+                <td>Positif</td>
+                <td>Menandakan nilai positif.</td>
+            </tr>
+
+            <tr>
+                <td>-</td>
+                <td>Negatif</td>
+                <td>Menandakan nilai negatif.</td>
+            </tr>
+
+            <tr>
+                <td>++</td>
+                <td>Increment</td>
+                <td>Menambah nilai variabel sebesar 1.</td>
+            </tr>
+
+            <tr>
+                <td>--</td>
+                <td>Decrement</td>
+                <td>Mengurangi nilai variabel sebesar 1.</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- SOAL 5 -->
+    <div class="card">
+        <h2>5. Implementasi Operator Pembagian dalam Java</h2>
+
+        <div class="code">
+public class PembagianContoh {
+
+    public static void main(String[] args) {
+
+        int totalApel = 10;
+        int jumlahOrang = 2;
+
+        int hasilBagi = totalApel / jumlahOrang;
+
+        System.out.println(
+        "Setiap orang mendapatkan: "
+        + hasilBagi + " apel.");
+
+    }
+
+}
+        </div>
+
+        <br>
+
+        <h3>Output Program</h3>
+
+        <div class="code">
+Setiap orang mendapatkan: 5 apel.
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <h3>Tugas Algoritma Pemrograman 2</h3>
+    <p>© 2026 | Apolonia Alexandria Ongge | 250403010051</p>
+</footer>
+
+</body>
+</html>

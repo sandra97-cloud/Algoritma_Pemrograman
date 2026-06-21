@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre Test Array</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0077ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:40px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    margin-bottom:10px;
+    font-size:36px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0066cc;
+    margin-bottom:15px;
+    border-left:6px solid #0066cc;
+    padding-left:10px;
+}
+
+pre{
+    background:#272822;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+    margin-top:10px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.box{
+    background:#eef6ff;
+    padding:15px;
+    border-radius:10px;
+    border-left:5px solid #0077ff;
+}
+
+footer{
+    background:#0077ff;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>PRE TEST ARRAY</h1>
+    <p>Algoritma Pemrograman</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Data Mahasiswa</h2>
+
+        <div class="info">
+            <div class="box">
+                <strong>Nama</strong><br>
+                Apolonia Alexandria Ongge
+            </div>
+
+            <div class="box">
+                <strong>NIM</strong><br>
+                250403010051
+            </div>
+
+            <div class="box">
+                <strong>Program Studi</strong><br>
+                Teknik Informatika
+            </div>
+
+            <div class="box">
+                <strong>Mata Kuliah</strong><br>
+                Algoritma Pemrograman
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>1. Apa yang dimaksud dengan Array?</h2>
+
+        <p>
+            Array adalah struktur data yang digunakan untuk menyimpan
+            sekumpulan data yang memiliki tipe yang sama dalam satu variabel.
+            Setiap data dalam array memiliki posisi yang disebut indeks,
+            sehingga data dapat diakses dengan mudah menggunakan indeks tersebut.
+        </p>
+
+        <h3>Contoh:</h3>
+
+        <pre>
+Nilai = {80, 85, 90, 95}
+        </pre>
+    </div>
+
+    <div class="card">
+        <h2>2. Jelaskan yang dimaksud dengan Array 1 Dimensi!</h2>
+
+        <p>
+            Array satu dimensi adalah array yang hanya memiliki satu deretan
+            elemen dan menggunakan satu indeks untuk mengakses setiap elemennya.
+        </p>
+
+        <h3>Contoh C++:</h3>
+
+        <pre>
+int nilai[5] = {70, 75, 80, 85, 90};
+        </pre>
+
+        <h3>Keterangan:</h3>
+
+        <pre>
+nilai[0] = 70
+nilai[1] = 75
+nilai[2] = 80
+nilai[3] = 85
+nilai[4] = 90
+        </pre>
+    </div>
+
+    <div class="card">
+        <h2>3. Bagaimana Cara Mendeklarasikan Array?</h2>
+
+        <p>
+            Array dideklarasikan dengan menuliskan tipe data,
+            nama array, dan jumlah elemen yang akan disimpan.
+        </p>
+
+        <h3>Contoh C++:</h3>
+
+        <pre>
+int angka[10];
+        </pre>
+
+        <h3>Artinya:</h3>
+
+        <ul>
+            <li>int = tipe data integer</li>
+            <li>angka = nama array</li>
+            <li>[10] = jumlah elemen yang dapat disimpan sebanyak 10 data</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Tipe Data yang Digunakan untuk Mendeklarasikan Array</h2>
+
+        <p>Beberapa tipe data yang dapat digunakan antara lain:</p>
+
+        <pre>
+Integer (int)
+int angka[5];
+
+Float
+float nilai[5];
+
+Double
+double data[5];
+
+Character (char)
+char huruf[10];
+
+String
+string nama[5];
+
+Boolean (bool)
+bool status[5];
+        </pre>
+    </div>
+
+    <div class="card">
+        <h2>5. Macam-Macam Array</h2>
+
+        <h3>a. Array Satu Dimensi (1D)</h3>
+
+        <pre>
+int nilai[5];
+        </pre>
+
+        <h3>b. Array Dua Dimensi (2D)</h3>
+
+        <pre>
+int matriks[3][3];
+        </pre>
+
+        <h3>c. Array Tiga Dimensi (3D)</h3>
+
+        <pre>
+int data[2][3][4];
+        </pre>
+
+        <h3>d. Array Multidimensi</h3>
+
+        <p>
+            Array yang memiliki lebih dari dua dimensi dan digunakan
+            untuk menyimpan data yang lebih kompleks.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <h3>Pre Test Array</h3>
+    <p>© 2026 | Apolonia Alexandria Ongge | 250403010051</p>
+</footer>
+
+</body>
+</html>

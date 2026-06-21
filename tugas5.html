@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas 5 pertemuan 11 Algoritma Pemrograman</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0077ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:40px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    margin-bottom:10px;
+    font-size:36px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0066cc;
+    margin-bottom:15px;
+    border-left:6px solid #0066cc;
+    padding-left:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:#0077ff;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+    vertical-align:top;
+}
+
+pre{
+    background:#272822;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+}
+
+footer{
+    background:#0077ff;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TUGAS 5 pertemuan 11 </h1>
+    <p>Perulangan Menggunakan Bahasa Python</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Data Mahasiswa</h2>
+
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>Apolonia Alexandria Ongge</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>250403010051</td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Mata Kuliah</td>
+                <td>Algoritma Pemrograman</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Program Perulangan For</h2>
+
+<pre>
+for i in range(1,6):
+    print("Perulangan ke-", i)
+</pre>
+
+        <h3>Output:</h3>
+
+<pre>
+Perulangan ke-1
+Perulangan ke-2
+Perulangan ke-3
+Perulangan ke-4
+Perulangan ke-5
+</pre>
+
+        <p>
+            Perulangan for digunakan ketika jumlah pengulangan sudah diketahui.
+            Pada program di atas, perulangan dilakukan sebanyak 5 kali.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Program Perulangan While</h2>
+
+<pre>
+i = 1
+
+while i <= 5:
+    print("Perulangan ke-", i)
+    i += 1
+</pre>
+
+        <h3>Output:</h3>
+
+<pre>
+Perulangan ke-1
+Perulangan ke-2
+Perulangan ke-3
+Perulangan ke-4
+Perulangan ke-5
+</pre>
+
+        <p>
+            Perulangan while akan terus berjalan selama kondisi bernilai benar.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Program Do While</h2>
+
+<pre>
+i = 1
+
+while True:
+    print("Perulangan ke-", i)
+    i += 1
+
+    if i > 5:
+        break
+</pre>
+
+        <h3>Output:</h3>
+
+<pre>
+Perulangan ke-1
+Perulangan ke-2
+Perulangan ke-3
+Perulangan ke-4
+Perulangan ke-5
+</pre>
+
+        <p>
+            Python tidak memiliki struktur do while secara langsung.
+            Oleh karena itu digunakan while True dan break untuk
+            meniru perilaku do while.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Program Perulangan Bersarang (Nested Loop)</h2>
+
+<pre>
+for i in range(1,6):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+</pre>
+
+        <h3>Output:</h3>
+
+<pre>
+*
+* *
+* * *
+* * * *
+* * * * *
+</pre>
+
+        <p>
+            Perulangan bersarang adalah perulangan yang berada di dalam
+            perulangan lainnya. Contohnya digunakan untuk membuat pola
+            bintang seperti di atas.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Kesimpulan</h2>
+
+        <p>
+            Dalam bahasa Python terdapat berbagai jenis perulangan yang dapat
+            digunakan untuk mengulang suatu proses. Perulangan for digunakan
+            ketika jumlah pengulangan sudah diketahui, while digunakan
+            berdasarkan kondisi tertentu, do while dapat disimulasikan dengan
+            while True dan break, sedangkan perulangan bersarang digunakan
+            ketika terdapat perulangan di dalam perulangan lainnya.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <h3>Tugas UAS Algoritma Pemrograman</h3>
+    <p>© 2026 | Apolonia Alexandria Ongge | 250403010051</p>
+</footer>
+
+</body>
+</html>

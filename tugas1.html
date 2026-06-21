@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas Algoritma Pemrograman</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+        background:#f4f7fc;
+        color:#333;
+        line-height:1.6;
+    }
+
+    header{
+        background:linear-gradient(135deg,#0077ff,#00c6ff);
+        color:white;
+        text-align:center;
+        padding:40px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1{
+        margin-bottom:10px;
+        font-size:36px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .container{
+        width:90%;
+        max-width:1200px;
+        margin:30px auto;
+    }
+
+    .card{
+        background:white;
+        padding:25px;
+        margin-bottom:25px;
+        border-radius:15px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2{
+        color:#0066cc;
+        margin-bottom:15px;
+        border-left:6px solid #0066cc;
+        padding-left:10px;
+    }
+
+    h3{
+        color:#009688;
+        margin-top:15px;
+        margin-bottom:10px;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        margin-top:15px;
+    }
+
+    table th{
+        background:#0077ff;
+        color:white;
+        padding:12px;
+    }
+
+    table td{
+        border:1px solid #ddd;
+        padding:12px;
+        vertical-align:top;
+    }
+
+    table tr:nth-child(even){
+        background:#f2f8ff;
+    }
+
+    ol{
+        margin-left:25px;
+    }
+
+    ul{
+        margin-left:25px;
+    }
+
+    footer{
+        background:#0077ff;
+        color:white;
+        text-align:center;
+        padding:20px;
+        margin-top:30px;
+    }
+
+    .info{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:15px;
+    }
+
+    .box{
+        background:#eef6ff;
+        padding:15px;
+        border-radius:10px;
+        border-left:5px solid #0077ff;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TUGAS POST TEST</h1>
+    <p>Algoritma Pemrograman</p>
+</header>
+
+<div class="container">
+
+    <!-- DATA MAHASISWA -->
+    <div class="card">
+        <h2>Data Mahasiswa</h2>
+
+        <div class="info">
+            <div class="box">
+                <strong>Nama</strong><br>
+                Apolonia Alexandria Ongge
+            </div>
+
+            <div class="box">
+                <strong>NIM</strong><br>
+                250403010051
+            </div>
+
+            <div class="box">
+                <strong>Kelas</strong><br>
+                A
+            </div>
+
+            <div class="box">
+                <strong>Mata Kuliah</strong><br>
+                Algoritma Pemrograman
+        </div>
+    </div>
+
+    <!-- SOAL DAN JAWABAN -->
+    <div class="card">
+        <h2>1. Contoh Algoritma Dalam Kehidupan Sehari-hari</h2>
+
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Studi Kasus</th>
+                <th>Algoritma</th>
+            </tr>
+
+            <tr>
+                <td>A</td>
+                <td>Mengambil Uang di ATM</td>
+                <td>
+                    <ol>
+                        <li>Mulai</li>
+                        <li>Masukkan kartu ATM ke mesin ATM.</li>
+                        <li>Pilih bahasa yang diinginkan.</li>
+                        <li>Masukkan PIN ATM.</li>
+                        <li>Pilih menu Tarik Tunai.</li>
+                        <li>Pilih nominal atau masukkan jumlah uang yang ingin diambil.</li>
+                        <li>Tunggu mesin memproses.</li>
+                        <li>Ambil uang yang keluar dari mesin ATM.</li>
+                        <li>Ambil kartu ATM dan struk jika ada.</li>
+                        <li>Selesai.</li>
+                    </ol>
+                </td>
+            </tr>
+
+            <tr>
+                <td>B</td>
+                <td>Membuat Kopi yang Manis dan Pahitnya Pas</td>
+                <td>
+                    <ol>
+                        <li>Mulai</li>
+                        <li>Siapkan cangkir, sendok, kopi bubuk, gula, dan air panas.</li>
+                        <li>Masukkan 1 sendok teh kopi bubuk ke dalam cangkir.</li>
+                        <li>Masukkan 1,5 sendok teh gula.</li>
+                        <li>Tuangkan air panas secukupnya.</li>
+                        <li>Aduk hingga rata.</li>
+                        <li>Cicipi sedikit.</li>
+                        <li>Jika terlalu pahit tambahkan gula.</li>
+                        <li>Jika terlalu manis tambahkan sedikit air panas atau kopi.</li>
+                        <li>Kopi siap dihidangkan.</li>
+                        <li>Selesai.</li>
+                    </ol>
+                </td>
+            </tr>
+
+            <tr>
+                <td>C</td>
+                <td>Menghitung Nilai y = 3x + 6</td>
+                <td>
+                    <ol>
+                        <li>Mulai</li>
+                        <li>Masukkan nilai x.</li>
+                        <li>Kalikan x dengan 3.</li>
+                        <li>Tambahkan hasilnya dengan 6.</li>
+                        <li>Simpan sebagai nilai y.</li>
+                        <li>Tampilkan nilai y.</li>
+                        <li>Selesai.</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- PENGERTIAN -->
+    <div class="card">
+        <h2>2. Pengertian Algoritma dan Program</h2>
+
+        <table>
+            <tr>
+                <th>Istilah</th>
+                <th>Pengertian</th>
+            </tr>
+
+            <tr>
+                <td>Algoritma</td>
+                <td>
+                    Algoritma adalah urutan langkah-langkah yang logis,
+                    sistematis, dan terstruktur untuk menyelesaikan suatu masalah.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Program</td>
+                <td>
+                    Program adalah kumpulan instruksi yang ditulis menggunakan
+                    bahasa pemrograman agar komputer dapat menjalankan algoritma.
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p>
+            <strong>Kesimpulan:</strong> Algoritma pemrograman adalah langkah-langkah
+            yang logis, terstruktur, dan sistematis untuk menyelesaikan suatu masalah
+            yang kemudian dituliskan dalam bentuk program menggunakan bahasa
+            pemrograman agar dapat dijalankan oleh komputer.
+        </p>
+
+    </div>
+
+    <!-- STRUKTUR DASAR -->
+    <div class="card">
+        <h2>3. Tiga Struktur Dasar Dalam Algoritma</h2>
+
+        <table>
+            <tr>
+                <th>Struktur</th>
+                <th>Penjelasan</th>
+            </tr>
+
+            <tr>
+                <td>Sekuensial</td>
+                <td>
+                    Struktur algoritma yang instruksinya dikerjakan secara
+                    berurutan dari langkah pertama hingga terakhir.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pemilihan (Seleksi)</td>
+                <td>
+                    Struktur yang digunakan untuk pengambilan keputusan
+                    berdasarkan kondisi tertentu.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Perulangan (Looping)</td>
+                <td>
+                    Struktur yang memungkinkan suatu instruksi dilakukan
+                    berulang kali sesuai kebutuhan.
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!-- FUNGSI BAHASA PEMROGRAMAN -->
+    <div class="card">
+        <h2>4. Fungsi Bahasa Pemrograman</h2>
+
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Fungsi</th>
+                <th>Penjelasan</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Alat Komunikasi dengan Komputer</td>
+                <td>
+                    Digunakan untuk memberikan instruksi kepada komputer agar
+                    menjalankan tugas tertentu.
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Membuat Aplikasi atau Program</td>
+                <td>
+                    Digunakan untuk mengembangkan aplikasi mobile, website,
+                    game, dan berbagai software lainnya.
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Mengolah Data</td>
+                <td>
+                    Membantu memproses, menghitung, dan menganalisis data
+                    secara cepat dan akurat.
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Mengotomatisasi Pekerjaan</td>
+                <td>
+                    Mempermudah pekerjaan yang berulang agar dapat dilakukan
+                    secara otomatis.
+                </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Mengontrol Perangkat Keras</td>
+                <td>
+                    Digunakan untuk mengatur cara kerja perangkat keras seperti
+                    printer, sensor, dan mesin tertentu.
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    <h3>Tugas Algoritma Pemrograman</h3>
+    <p>© 2026 | Apolonia Alexandria Ongge | 250403010051</p>
+</footer>
+
+</body>
+</html>

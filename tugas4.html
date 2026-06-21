@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas 4 - Algoritma Cek Kelulusan Ujian</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f8ff;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0066ff,#00bfff);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0066cc;
+    border-left:5px solid #0066cc;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+h3{
+    color:#009688;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#0077ff;
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7fbff;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.box{
+    background:#eef5ff;
+    padding:15px;
+    border-left:5px solid #0077ff;
+    border-radius:10px;
+}
+
+.code{
+    background:#272822;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    overflow-x:auto;
+    white-space:pre-wrap;
+    font-family:Consolas, monospace;
+    margin-top:10px;
+}
+
+.flowchart{
+    background:#f8f9fa;
+    border:2px solid #0077ff;
+    border-radius:10px;
+    padding:20px;
+    font-family:Consolas, monospace;
+    line-height:1.8;
+}
+
+ol{
+    margin-left:25px;
+}
+
+footer{
+    background:#0066cc;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>TUGAS 4 ALGORITMA PEMROGRAMAN</h1>
+    <p>Algoritma Cek Kelulusan Ujian</p>
+</header>
+
+<div class="container">
+
+    <!-- DATA MAHASISWA -->
+    <div class="card">
+        <h2>Data Mahasiswa</h2>
+
+        <div class="info">
+            <div class="box">
+                <strong>Nama</strong><br>
+                Apolonia Alexandria Ongge
+            </div>
+
+            <div class="box">
+                <strong>NIM</strong><br>
+                250403010051
+            </div>
+
+            <div class="box">
+                <strong>Kelas</strong><br>
+                A
+            </div>
+
+            <div class="box">
+                <strong>Mata Kuliah</strong><br>
+                Algoritma Pemrograman
+            </div>
+        </div>
+    </div>
+
+    <!-- STUDI KASUS -->
+    <div class="card">
+        <h2>Studi Kasus</h2>
+
+        <p>
+            Seorang guru ingin menentukan status kelulusan siswanya berdasarkan
+            nilai ujian mata pelajaran Matematika.
+            Jika nilai siswa lebih besar atau sama dengan 75,
+            maka siswa dinyatakan <strong>"LULUS"</strong>.
+            Jika nilai di bawah 75 maka dinyatakan
+            <strong>"TIDAK LULUS"</strong>.
+        </p>
+    </div>
+
+    <!-- NOTASI DESKRIPTIF -->
+    <div class="card">
+        <h2>Notasi Kalimat Deskriptif</h2>
+
+        <h3>Algoritma_CekKelulusan</h3>
+
+        <h3>Deklarasi</h3>
+
+        <table>
+            <tr>
+                <th>Variabel</th>
+                <th>Tipe Data</th>
+            </tr>
+
+            <tr>
+                <td>nama_siswa</td>
+                <td>String</td>
+            </tr>
+
+            <tr>
+                <td>nilai_ujian</td>
+                <td>Integer</td>
+            </tr>
+
+            <tr>
+                <td>keterangan</td>
+                <td>String</td>
+            </tr>
+        </table>
+
+        <h3>Deskripsi Algoritma</h3>
+
+        <ol>
+            <li>Masukkan nama siswa.</li>
+            <li>Masukkan nilai ujian siswa.</li>
+            <li>Lakukan pengecekan kondisi.</li>
+            <li>Jika nilai ujian ≥ 75 maka keterangan = "LULUS".</li>
+            <li>Jika nilai ujian < 75 maka keterangan = "TIDAK LULUS".</li>
+            <li>Tampilkan nama siswa dan status kelulusannya.</li>
+            <li>Selesai.</li>
+        </ol>
+
+    </div>
+
+    <!-- PSEUDOCODE -->
+    <div class="card">
+        <h2>Notasi Pseudocode</h2>
+
+        <div class="code">
+PROGRAM CekKelulusanUjian
+
+DEKLARASI
+nama_siswa : string
+nilai_ujian : integer
+keterangan : string
+
+ALGORITMA
+
+read(nama_siswa)
+read(nilai_ujian)
+
+IF nilai_ujian >= 75 THEN
+    keterangan = "LULUS"
+ELSE
+    keterangan = "TIDAK LULUS"
+ENDIF
+
+write("Nama : ", nama_siswa)
+write("Status : ", keterangan)
+
+END
+        </div>
+
+    </div>
+
+  <!-- FLOWCHART -->
+<div class="card">
+    <h2>Flowchart Algoritma Cek Kelulusan Ujian</h2>
+
+    <div class="flowchart-container">
+        <img src="flowchart.png"
+             alt="Flowchart Cek Kelulusan Ujian"
+             class="flowchart-img">
+    </div>
+</div>
+
+    <!-- CONTOH OUTPUT -->
+    <div class="card">
+        <h2>Contoh Output</h2>
+
+        <table>
+            <tr>
+                <th>Nama Siswa</th>
+                <th>Nilai Ujian</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Andi</td>
+                <td>80</td>
+                <td>LULUS</td>
+            </tr>
+
+            <tr>
+                <td>Budi</td>
+                <td>65</td>
+                <td>TIDAK LULUS</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<footer>
+    <h3>Tugas Algoritma Pemrograman 3</h3>
+    <p>© 2026 | Apolonia Alexandria Ongge | 250403010051</p>
+</footer>
+
+</body>
+</html>
